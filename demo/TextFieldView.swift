@@ -16,12 +16,20 @@ struct TextFieldView: View {
     let tipPercentages = [10, 15, 20, 25, 0]
     let 🐶 = [10, 15, 20, 25, 0]
     
-//    let color = UIColor(named: "SillyBlue")
+    //    let color = UIColor(named: "SillyBlue")
     
-    let color = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    let color = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     
-    var totalPerPerson = {
-        return 0
+    var totalPerPerson: Double {
+        let peopleCount = Double(numberOfPeople)
+        let tipSelection = Double(tipPercentages[tipPercentage])
+        let orderAmount = Double(checkAmount) ?? 0
+        
+        let tipValue = orderAmount / 100  * tipSelection
+        let grandTotal  = orderAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+        
+        return amountPerPerson
     }
     
     var body: some View {
@@ -31,8 +39,8 @@ struct TextFieldView: View {
                     TextField("Amount", text: $checkAmount)
                         .keyboardType(.decimalPad)
                     
-                    Picker("Select student", selection: $numberOfPeople) {
-                        ForEach(2 ..< 100) {
+                    Picker("Number of people", selection: $numberOfPeople) {
+                        ForEach(0 ..< 100) {
                             Text("\($0) people")
                         }
                     }
@@ -40,15 +48,15 @@ struct TextFieldView: View {
                 
                 Section(header: Text("How much tip do you want to leave?")) {
                     Picker("Tip percentage", selection: $tipPercentage) {
-                        ForEach(0 ..< 🐶.count) {
-                            Text("\(self.🐶[$0])%")
+                        ForEach(0 ..< tipPercentages.count) {
+                            Text("\(self.tipPercentages[$0])%")
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
                 Section {
-                    Text("$\(checkAmount)")
+                    Text("$\(totalPerPerson, specifier: "%.2f")")
                 }
             }
             .navigationBarTitle("Chnirt", displayMode: .inline)
