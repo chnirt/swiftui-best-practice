@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            TextFieldView()
+            AlertView()
         }
         
 //        VStack(alignment: .leading) {
