@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            AlertView()
+            IdolView()
         }
         
 //        VStack(alignment: .leading) {

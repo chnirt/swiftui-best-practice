@@ -24,6 +24,7 @@
 		6F72F427237675C900EC9E1A /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F72F426237675C900EC9E1A /* TextFieldView.swift */; };
 		6FD1B7CE237685B700F19A66 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1B7CD237685B700F19A66 /* Color.xcassets */; };
 		6FD1B7D02376C83E00F19A66 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1B7CF2376C83E00F19A66 /* AlertView.swift */; };
+		6FD1B7D223771AAD00F19A66 /* IdolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1B7D123771AAD00F19A66 /* IdolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		6F72F426237675C900EC9E1A /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		6FD1B7CD237685B700F19A66 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		6FD1B7CF2376C83E00F19A66 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		6FD1B7D123771AAD00F19A66 /* IdolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				6F72F4242376753300EC9E1A /* PickerView.swift */,
 				6F72F426237675C900EC9E1A /* TextFieldView.swift */,
 				6FD1B7CF2376C83E00F19A66 /* AlertView.swift */,
+				6FD1B7D123771AAD00F19A66 /* IdolView.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				6F72F4052375A62A00EC9E1A /* MapView.swift in Sources */,
 				6F67F74F236F01C200860EAD /* SceneDelegate.swift in Sources */,
 				6F67F751236F01C300860EAD /* ContentView.swift in Sources */,
+				6FD1B7D223771AAD00F19A66 /* IdolView.swift in Sources */,
 				6F72F41F2376725600EC9E1A /* BindingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
