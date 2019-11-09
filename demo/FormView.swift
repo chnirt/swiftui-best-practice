@@ -16,7 +16,7 @@ struct FormView: View {
                     Text("Hello World")
                 }
             }
-            .navigationBarTitle("Something", displayMode: .inline)
+            .navigationBarTitle("Navigation", displayMode: .inline)
         }
     }
 }

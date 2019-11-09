@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct ListView: View {
     
     @State private var username: String = ""
     @State private var password: String = ""
@@ -27,14 +27,12 @@ struct LoginView: View {
                 Text("aa")
                 
             }.listRowInsets(EdgeInsets())
-            
-            
         }
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        ListView()
     }
 }
